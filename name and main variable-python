@@ -1,0 +1,63 @@
+mymodule.py -->file
+
+
+
+# def my_function():
+#     print ("I am inside function")
+
+# print("File one __name__ is set to: {}" .format(__name__))
+ 
+# # We can test function by calling it.
+# # my_function()
+# if __name__ == "__main__":
+# 	my_function()
+# else:
+# 	print("function one not declared")
+
+
+
+def adding():
+	print(2+3)
+
+def subtract():
+	print(9-0)
+print("File one __name__ is set to: {}" .format(__name__))
+if __name__ == '__main__':
+	adding()
+	print("addition done")
+else:
+	subtract()
+	print("subtraction done")
+
+================================================================================
+
+
+myprogram.py
+
+
+# from mymodule import adding
+# adding()
+
+# print("File two __name__ is set to: {}" .format(__name__))
+# # mymodule.my_function()
+
+# if __name__ == "__main__":
+# 	mymodule.my_function()
+# else:
+# 	print("function two not declared")
+
+def adding():
+	print(2+4)
+
+def subtract():
+	print(9-1)
+print("File two __name__ is set to: {}" .format(__name__))
+
+if __name__ == '__main__':
+	adding()
+else:
+	subtract()
+
+
+# python myprogram.py --> in command prompt
+# python mymodule.py
